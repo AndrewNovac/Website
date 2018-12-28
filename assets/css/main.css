@@ -1675,7 +1675,7 @@
 		}
 
 	body {
-		color: #212931;
+		color: #ffffff;
 	}
 
 	body, input, select, textarea {
@@ -1819,11 +1819,11 @@
 	}
 
 	input, select, textarea {
-		color: #212931;
+		color: #ffffff;
 	}
 
 	a {
-		color: #212931;
+		color: #ffffff;
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 
@@ -1833,11 +1833,11 @@
 		}
 
 	strong, b {
-		color: #212931;
+		color: #ffffff;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color: #ffffff;
 	}
 
 	blockquote {
@@ -2028,8 +2028,8 @@
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #212931;
-		color: #212931 !important;
+		box-shadow: inset 0 0 0 2px #ffffff;
+		color: #ffffff !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2046,7 +2046,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #212931;
+			background-color: #ffffff;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2326,7 +2326,7 @@
 	}
 
 	label {
-		color: #212931;
+		color: #ffffff;
 	}
 
 	input[type="text"],
@@ -2347,7 +2347,7 @@
 
 	select option {
 		background-color: #ffffff;
-		color: #212931;
+		color: #ffffff;
 	}
 
 	.select-wrapper:before {
@@ -2356,7 +2356,7 @@
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #212931;
+		color: #ffffff;
 	}
 
 		input[type="checkbox"] + label:before,
@@ -2366,8 +2366,8 @@
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #212931;
-		border-color: #212931;
+		background-color: #ffffff;
+		border-color: #ffffff;
 		color: #ffffff;
 	}
 
@@ -2894,7 +2894,7 @@
 		}
 
 	table th {
-		color: #212931;
+		color: #ffffff;
 	}
 
 	table thead {
@@ -2995,7 +2995,7 @@
 	}
 
 	.pagination a {
-		color: #212931 !important;
+		color: #ffffff !important;
 	}
 
 		.pagination a:hover {
@@ -3338,7 +3338,7 @@
 
 		#header a {
 			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
 			#header a:hover {
@@ -3428,7 +3428,7 @@
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(100, 100, 100, 0.175);
 		height: 4rem;
 		line-height: 4rem;
 		margin: 0rem auto 0 auto;
@@ -3535,11 +3535,11 @@
 					}
 
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-color: #00000020;
 				}
 
 					#nav ul.links li.active a {
-						color: #050C18;
+						color: #ffffff;
 					}
 
 						#nav ul.links li.active a:hover {
@@ -3569,18 +3569,38 @@
 /* Main */
 
 	#main {
-		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		background: rgba(0, 0, 0, 0.175);
+		-webkit-backdrop-filter: blur(10px);
+		-moz-backdrop-filter: blur(10px);
+		-ms-backdrop-filter: blur(10px);
+		-o-backdrop-filter: blur(10px);
 	}
+	/*.blur {
+		width:100%;
+		height:100%;
+		position: absolute;
+		background-color: #00000075;
+		background-size:cover;
+		-webkit-filter: blur(10px);
+		-webkit-filter: blur(10px);
+		-moz-filter: blur(10px);
+		-ms-filter: blur(10px);
+		-o-filter: blur(10px);
+		filter: blur(10px);
+	}*/
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
 			margin: 0;
+			-webkit-backdrop-filter: blur(10px);
+			-moz-backdrop-filter: blur(10px);
+			-ms-backdrop-filter: blur(10px);
+			-o-backdrop-filter: blur(10px);
 		}
 
 			#main > *:first-child {
@@ -3664,6 +3684,10 @@
 				-webkit-flex-grow: 0;
 				-ms-flex-grow: 0;
 				flex-grow: 0;
+				-webkit-backdrop-filter: blur(10px);
+				-moz-backdrop-filter: blur(10px);
+				-ms-backdrop-filter: blur(10px);
+				-o-backdrop-filter: blur(10px);
 			}
 
 			#main > .posts > * {
@@ -3676,10 +3700,6 @@
 			}
 
 			#main > .posts > article {
-				border-color: #eeeeee;
-				border-left-width: 2px;
-				border-style: solid;
-				border-top-width: 2px;
 				text-align: center;
 			}
 
@@ -3762,19 +3782,21 @@
 /* Footer */
 
 	#footer {
-		color: #717981;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #f5f5f5;
-		color: #909498;
 		cursor: default;
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		background: rgba(0, 0, 0, 0.175);
+		-webkit-backdrop-filter: blur(10px);
+		-moz-backdrop-filter: blur(10px);
+		-ms-backdrop-filter: blur(10px);
+		-o-backdrop-filter: blur(10px);
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -3783,11 +3805,9 @@
 
 		#footer a {
 			color: #717981;
-			border-bottom-color: rgba(113, 121, 129, 0.5);
 		}
 
 			#footer a:hover {
-				border-bottom-color: transparent;
 				color: #18bfef !important;
 			}
 
@@ -3800,20 +3820,16 @@
 		}
 
 		#footer blockquote {
-			border-left-color: #e2e2e2;
 		}
 
 		#footer code {
 			background: rgba(220, 220, 220, 0.5);
-			border-color: #e2e2e2;
 		}
 
 		#footer hr {
-			border-bottom-color: #e2e2e2;
 		}
 
 		#footer .box {
-			border-color: #e2e2e2;
 		}
 
 		#footer input[type="submit"],
@@ -3956,21 +3972,6 @@
 			color: #717981;
 		}
 
-		#footer table thead {
-			border-bottom-color: #e2e2e2;
-		}
-
-		#footer table tfoot {
-			border-top-color: #e2e2e2;
-		}
-
-		#footer table.alt tbody tr td {
-			border-color: #e2e2e2;
-		}
-
-		#footer .pagination a, #footer .pagination span {
-			border-color: #e2e2e2;
-		}
 
 		#footer .pagination a {
 			color: #717981 !important;
@@ -4008,7 +4009,6 @@
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
 			padding: 4rem 4rem 2rem 4rem ;
-			border-left: solid 2px #e2e2e2;
 		}
 
 			#footer > section:first-child {
@@ -4029,7 +4029,6 @@
 
 				#footer > section.split > section {
 					padding: 3rem 4rem 1rem 4rem ;
-					border-top: solid 2px #e2e2e2;
 				}
 
 					#footer > section.split > section:first-child {
@@ -4332,7 +4331,7 @@
 		#navPanelToggle.alt {
 			background-color: rgba(255, 255, 255, 0.875);
 			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
-			color: #212931;
+			color: #ffffff;
 		}
 
 			#navPanelToggle.alt:hover {
@@ -4369,7 +4368,7 @@
 		-webkit-overflow-scrolling: touch;
 		background: #ffffff;
 		box-shadow: none;
-		color: #212931;
+		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -4444,7 +4443,7 @@
 			}
 
 			#navPanel .close:hover {
-				color: #212931;
+				color: #ffffff;
 			}
 
 			@media screen and (max-width: 736px) {
